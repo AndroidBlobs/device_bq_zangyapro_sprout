@@ -136,6 +136,8 @@ vendor/etc/acdbdata/QRD/sdm660-tasha-skus-snd-card/QRD_SKUS_workspaceFile.qwsp
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sdm660.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
@@ -143,6 +145,8 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.sdm660.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -294,6 +298,7 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 # Camera
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libbase64.so
+vendor/lib/libcam.vidhance.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libhal_dbg.so
@@ -1668,17 +1673,21 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.sdm660.so
+vendor/lib/hw/thermal.zangyapro.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.sdm660.so
+vendor/lib64/hw/thermal.zangyapro.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.sdm660.so
-vendor/lib/hw/thermal.zangyapro.so
-vendor/lib64/hw/thermal.sdm660.so
-vendor/lib64/hw/thermal.zangyapro.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -1850,7 +1859,6 @@ vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/manifest_sku.rc
 vendor/etc/long_exposure_times.xml
 vendor/etc/mct_pipeline.xml
-vendor/lib/libcam.vidhance.so
 vendor/lib/libdiagbridge.so
 vendor/lib/libdiagjni.so
 vendor/lib/libfastcrc.so
