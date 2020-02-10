@@ -2,7 +2,7 @@ DEVICE_PATH := device/bq/zangyapro_sprout
 BOARD_VENDOR := bq
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-11-01
+VENDOR_SECURITY_PATCH := 2019-12-05
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
