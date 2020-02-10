@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.can.sh \
+    init.qti.charger.sh \
     init.qti.fm.sh \
     init.qti.ims.sh \
     init.qti.manifest_sku.sh \
